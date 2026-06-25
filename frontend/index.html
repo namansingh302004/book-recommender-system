@@ -4,34 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookRecommender</title>
+    <title>BookRecommender | Precision Discovery</title>
+    <meta name="description" content="Discover your next favorite book with our advanced precision-weighted recommendation system. Search over thousands of titles and get instant matches.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h1>BookRecommender</h1>
-            <p>Find your next favorite book</p>
+        <div class="container header-content">
+            <h1><a href="index.html">Book<span>Recommender</span></a></h1>
+            <p>v1.0.0 // STITCH</p>
         </div>
     </header>
 
+    <section class="hero-section">
+        <div class="container">
+            <h2>Discover Your Next Favorite Chapter</h2>
+            <p>Find tailored matches from an extensive catalog of titles and authors powered by similarity models.</p>
+        </div>
+    </section>
+
     <main class="container">
         <section class="search-section">
-            <h2>Search for a Book</h2>
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Enter book title...">
-                <button id="search-button">Search</button>
+            <div class="search-box-wrapper">
+                <div class="search-container">
+                    <svg class="search-icon-svg" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#94A3B8">
+                        <path d="M784-120 532-372q-30 24-70.5 38T376-320q-107 0-181.5-74.5T120-576q0-107 74.5-181.5T376-832q107 0 181.5 74.5T632-576q0 44-14 84.5T580-420l252 252-48 48Zm-408-280q75 0 127.5-52.5T556-576q0-75-52.5-127.5T376-756q-75 0-127.5 52.5T196-576q0 75 52.5 127.5T376-400Z"/>
+                    </svg>
+                    <input type="text" id="search-input" placeholder="Search by title, author, or ISBN..." autofocus>
+                    <button id="search-button">Search</button>
+                </div>
             </div>
+        </section>
+
+        <!-- Search Results Section -->
+        <section id="results-section" style="display: none; margin-bottom: 56px;">
+            <h3 class="section-title">Search Results</h3>
             <div id="search-results" class="search-results-container"></div>
+        </section>
+
+        <!-- Trending / Popular Section -->
+        <section id="popular-section">
+            <h3 class="section-title">Trending Now</h3>
+            <div id="popular-books" class="recommendations-container">
+                <div class="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Fetching curated collection...</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 BookRecommender</p>
+            <p>&copy; 2026 BookRecommender. Engineered with Google Stitch. All rights reserved.</p>
         </div>
     </footer>
 

@@ -5,37 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Details | BookRecommender</title>
+    <meta name="description" content="Detailed information and similar recommendations for your selected book. Powered by similarity indexes.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h1>BookRecommender</h1>
-            <p>Find your next favorite book</p>
+        <div class="container header-content">
+            <h1><a href="index.html">Book<span>Recommender</span></a></h1>
+            <p>v1.0.0 // STITCH</p>
         </div>
     </header>
 
     <main class="container">
-        <a href="index.html" class="back-button">← Back to Search</a>
+        <div class="back-button-container">
+            <a href="index.html" class="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18" fill="currentColor">
+                    <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/>
+                </svg>
+                Back to Index
+            </a>
+        </div>
 
         <div id="book-details">
-            <p>Loading book details...</p>
+            <!-- Details will be loaded dynamically -->
+            <div class="loading-indicator">
+                <div class="spinner"></div>
+                <p>Retrieving volume specifications from index...</p>
+            </div>
         </div>
 
         <section id="recommendations-section" class="recommendations-section">
-            <h2>Recommended Books</h2>
+            <h3 class="section-title">Recommended Matches</h3>
             <div id="recommendations-container" class="recommendations-container">
-                <p>Loading recommendations...</p>
+                <div class="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Generating similarity indices...</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 BookRecommender</p>
+            <p>&copy; 2026 BookRecommender. Engineered with Google Stitch. All rights reserved.</p>
         </div>
     </footer>
 
