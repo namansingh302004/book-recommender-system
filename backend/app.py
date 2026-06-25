@@ -3,7 +3,6 @@ from flask_cors import CORS
 import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
-import pickle
 from pymongo import MongoClient
 
 app = Flask(__name__)

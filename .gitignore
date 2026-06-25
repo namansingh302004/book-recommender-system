@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Local environment/configuration
+.env
+.env.*
+!.env.example
+
+# Local datasets and generated model artifacts
+data/
+*.csv
+*.pkl
+*.pickle
+*.joblib
+
+# Logs and runtime output
+*.log
+logs/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies/builds
+node_modules/
+dist/
+build/
